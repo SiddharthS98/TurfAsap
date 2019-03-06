@@ -1,0 +1,116 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "./fonts.css";
+
+@import "~material-design-icons-iconfont";
+//@import "../../../node_modules/materialize-css/";
+@import "../../../node_modules/materialize-css/sass/materialize";
+//@import '../../../node_modules/vuetify/dist/vuetify.min.css';
+
+@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+//Notie
+@import "~notie/dist/notie.min";
+
+//NProgress
+@import "~nprogress/nprogress";
+
+$animationDuration: 0.2s;
+@import "../../../node_modules/vue2-animate/src/sass/vue2-animate.scss";
+// Variables
+@import 'variables';
+
+@import "./../cards/card.css";
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+html {
+  height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+
+}
+body:not(.search) {
+  font-family: Roboto, sans-serif !important;
+  color: white;
+  background: repeating-linear-gradient(
+                  -55deg,
+                  #222,
+                  #222 10px,
+                  #333 10px,
+                  #333 20px
+  );
+}
+
+.main {
+    //background: url('/assets/background.jpg') no-repeat;
+    //background-size: cover;
+
+
+}
+
+.nav-name {
+  padding: 25px;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+nav ul a:hover {
+  background-color: #303030;
+}
+
+.footer-icons .icon {
+  font-size: 25px;
+  padding: 5px;
+}
+
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 300px #424242 inset !important;
+  -webkit-text-fill-color: white !important;
+}
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 300px #424242 inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+.register .select-dropdown, .validate, .prefix.active {
+   color: #FFF !important;
+ }
+input:focus:not(.search), .validate:focus:not(.search) {
+  color: #FFF;
+  border-bottom-color: #FFF !important;
+  -webkit-box-shadow: 0 1px 0 0 #FFF !important;
+  box-shadow: 0 1px 0 0 #FFF !important;
+}
+
+
+.pointer {
+  cursor: pointer;
+}
+
+.pagination li a {
+  color: #FFF;
+}
+
+.datepicker-day-button, .dropdown-trigger {
+  color: #000 !important;
+}
+
+#nprogress .bar {
+  height: 7px !important;
+}
